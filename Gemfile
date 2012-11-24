@@ -6,6 +6,10 @@ group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
   gem 'wirble'
+  gem 'rb-fsevent'
+  gem 'guard-rspec'
+  #gem 'guard'
+  gem 'terminal-notifier-guard'
   gem 'debugger'
 end
 
