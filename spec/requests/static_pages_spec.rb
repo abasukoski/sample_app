@@ -30,6 +30,7 @@ describe "Static pages" do
     end
   end
 
+  #todo configure guard spork to fire when the rules change
   describe "About page" do
 
     it "should have the h1 'About Us'" do
@@ -42,6 +43,7 @@ describe "Static pages" do
                                 text: "#{base_title} | About")
     end
   end
+
   describe "Contacts page" do
 
     it "should have the h1 'Contact'" do
