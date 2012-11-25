@@ -7,6 +7,8 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
   gem 'wirble'
   gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'spork'
   gem 'debugger'
 end
 
