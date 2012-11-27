@@ -1,12 +1,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: my_test_app_development
+  database: development
   pool: 5
-  username: postgres
-  password: 4oo1a41ie
-  host: localhost
-  port: 5433
+  username:  a
+  password:
+  port: 5432
 
 test:
   adapter: postgresql
