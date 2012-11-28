@@ -10,31 +10,31 @@ describe "Static pages" do
     it { should have_selector('h1', text: "Sample App") }
 
     it { should have_selector('title',
-                              :text => "Ruby on Rails Tutorial Sample App") }
+                              :text => full_title) }
 
     it { should_not have_selector('title',
-                                  :text => "#{base_title} | Home") }
+                                  :text => full_title("Home")) }
   end
 
   describe "Help page" do
     before { visit help_path }
     it { should have_selector('h1', text: "Help") }
     it { should have_selector('title',
-                              text: "#{base_title} | Help") }
+                              text: full_title("Help")) }
   end
 
   describe "About page" do
     before { visit about_path }
     it { should have_selector('h1', text: "About Us") }
     it { should have_selector('title',
-                              text: "#{base_title} | About") }
+                              text: full_title("About")) }
   end
 
   describe "Contacts page" do
     before { visit contact_path }
     it { have_selector('h1', text: "Contact") }
     it { should have_selector('title',
-                              text: "#{base_title} | Contact") }
+                              text: full_title("Contact")) }
   end
 end
 
