@@ -5,10 +5,10 @@
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-<%= render 'layouts/shim' %>
+  <%= render :partial => 'shim' %>
 </head>
 <body>
-<%= render 'layouts/header' %>
+<%= render :partial => 'header' %>
 <div class="container">
   <h1><%= yield(:title) %> </h1>
   <%= yield %>
