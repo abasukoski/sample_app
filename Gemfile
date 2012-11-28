@@ -4,6 +4,7 @@ gem 'rails', '3.2.9'
 
 group :development, :test do
   gem 'test-unit'
+  gem 'bootstrap-sass'
   gem 'rspec-rails', '2.11.0'
   gem 'wirble'
   gem 'guard-rspec'
