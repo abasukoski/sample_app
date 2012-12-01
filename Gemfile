@@ -4,13 +4,22 @@ gem 'rails', '3.2.9'
 gem 'bootstrap-sass'
 
 group :development, :test do
-  gem 'test-unit'
+  #gem 'test-unit'
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-debugger'
   gem 'rspec-rails', '2.11.0'
   gem 'wirble'
   gem 'guard-rspec'
   gem 'guard-spork'
   gem 'spork'
-  gem 'debugger'
+  gem 'debugger', '~>1.1.3'
+  gem 'awesome_print'
+  gem 'term-ansicolor'
+  gem 'method_info'
+  gem 'map_by_method'
+  gem 'hirb'
 end
 
 # Gems used only for assets and not required
@@ -30,6 +39,10 @@ group :test do
 end
 
 gem 'pg', '0.12.2'
+
+group :development do
+  gem 'annotate'
+end
 
 group :production do
 end
