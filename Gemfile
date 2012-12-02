@@ -1,7 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
+gem 'pg', '0.12.2'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
+
+group :production do
+end
+
+group :development do
+  gem 'annotate'
+end
 
 group :development, :test do
   #gem 'test-unit'
@@ -38,11 +47,6 @@ group :test do
   gem 'terminal-notifier-guard'
 end
 
-gem 'pg', '0.12.2'
 
-group :development do
-  gem 'annotate'
-end
 
-group :production do
-end
+
