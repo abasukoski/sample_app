@@ -45,6 +45,7 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'rb-fsevent'
   gem 'terminal-notifier-guard'
+  gem 'factory_girl_rails'
 end
 
 
