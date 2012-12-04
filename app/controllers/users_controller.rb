@@ -5,5 +5,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    puts "in UsersController:new"
+    @user = User.new
   end
 end
