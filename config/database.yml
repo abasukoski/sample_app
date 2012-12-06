@@ -7,7 +7,7 @@ development:
   password:
   port: 5432
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: test
@@ -24,3 +24,5 @@ production:
   username: a
   password:
   port: 5432
+cucumber:
+  <<: *test

@@ -46,6 +46,8 @@ group :test do
   gem 'rb-fsevent'
   gem 'terminal-notifier-guard'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
 end
 
 
