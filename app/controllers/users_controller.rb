@@ -4,11 +4,11 @@ class UsersController < ApplicationController
   before_filter :correct_user, only:   [:edit, :update]
 
   def edit
-    @user = User.find (params[:id])
+    #@user = User.find (params[:id])
   end
 
   def show
-    #@user = User.find(params[:id])
+    @user = User.find(params[:id])
   end
 
   def new
