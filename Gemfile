@@ -4,6 +4,7 @@ gem 'rails'
 gem 'pg'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'faker'
 
 group :production do
 end
