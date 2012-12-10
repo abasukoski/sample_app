@@ -21,6 +21,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-debugger'
+  gem 'pry-stack_explorer'
   gem 'rspec-rails'
   gem 'wirble'
   gem 'guard-rspec'

@@ -34,6 +34,7 @@ GEM
     arel (3.0.2)
     awesome_print (1.1.0)
     bcrypt-ruby (3.0.1)
+    binding_of_caller (0.6.8)
     bootstrap-sass (2.2.1.1)
       sass (~> 3.2)
     bootstrap-will_paginate (0.0.9)
@@ -137,6 +138,8 @@ GEM
       yard (~> 0.8.1)
     pry-rails (0.2.2)
       pry (>= 0.9.10)
+    pry-stack_explorer (0.4.7)
+      binding_of_caller (~> 0.6.8)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -241,6 +244,7 @@ DEPENDENCIES
   pry-debugger
   pry-doc
   pry-rails
+  pry-stack_explorer
   rails
   rb-fsevent
   rspec-rails
