@@ -59,8 +59,19 @@ describe "AuthenticationPages" do
         end
       end
 
-      describe "in the Users controller" do
+      describe "when signing in again" do
+        before do
+          delete signout_path
+          visit signin_path
+          sign_in user
+        end
 
+        it "should render the default (profile) page" do
+          page.should have_selector('title', text: user.name)
+        end
+      end
+
+      describe "in the Users controller" do
         describe "visiting the edit page" do
           before { visit edit_user_path(user) }
           it { should have_selector('title', text: 'Sign in') }
