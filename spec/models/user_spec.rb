@@ -29,11 +29,13 @@ describe User do
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:microposts) }
+
 
   it { should be_valid }
   it { should_not be_admin }
-  it { should_not allow_mass_assignment_of :admin }  #answers for  9.6.1
-  it { should_not be_accessible :admin}
+  it { should_not allow_mass_assignment_of :admin } #answers for  9.6.1
+  it { should_not be_accessible :admin }
 
   describe "with admin attribute set to 'true'" do
     before do
