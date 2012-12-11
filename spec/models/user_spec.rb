@@ -8,6 +8,8 @@
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #  password_digest :string(255)
+#  remember_token  :string(255)
+#  admin           :boolean
 #
 
 require 'spec_helper'
@@ -30,6 +32,8 @@ describe User do
 
   it { should be_valid }
   it { should_not be_admin }
+  it { should_not allow_mass_assignment_of :admin }  #answers for  9.6.1
+  it { should_not be_accessible :admin}
 
   describe "with admin attribute set to 'true'" do
     before do
