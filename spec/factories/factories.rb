@@ -5,12 +5,18 @@ FactoryGirl.define do
     password "foobar"
     password_confirmation "foobar"
   end
+
   factory :admin, class: User do
     name "Example User"
     email "example@railstutorial.org"
     password "foobar"
     password_confirmation "foobar"
     admin true
+  end
+
+  factory :micropost do
+    content "Lorem ipsum"
+    user
   end
 end
 
