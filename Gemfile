@@ -7,7 +7,7 @@ gem 'bcrypt-ruby'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-#gem 'thin'
+gem 'thin'
 
 group :production do
 end
@@ -23,7 +23,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-debugger'
   gem 'pry-stack_explorer'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.11.0'
   gem 'wirble'
   gem 'guard-rspec'
   gem 'guard-spork'
@@ -39,12 +39,12 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier'
+  gem 'sass-rails',   '3.2.5'
+  gem 'coffee-rails', '3.2.2'
+  gem 'uglifier', '1.2.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'

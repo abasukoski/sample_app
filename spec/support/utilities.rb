@@ -28,6 +28,7 @@ RSpec::Matchers.define :be_accessible do |attribute|
 end
 
 def sign_in(user)
+  binding.pry
   visit signin_path
   fill_in "Email", with: user.email
   fill_in "Password", with: user.password
