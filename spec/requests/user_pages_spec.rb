@@ -3,10 +3,12 @@ require 'spec_helper'
 describe "UserPages" do
   subject { page }
 
+
   describe "index" do
     let(:user) { FactoryGirl.create(:user) }
 
     before do
+      MyLog.debug "User is #{user.ai}"
       sign_in user
       visit users_path
     end
