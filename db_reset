@@ -1,0 +1,6 @@
+echo bundle exec rake db:reset
+bundle exec rake db:reset
+echo bundle exec rake db:populate
+bundle exec rake db:populate
+echo bundle exec rake db:test:prepare
+bundle exec rake db:test:prepare
