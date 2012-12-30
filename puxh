@@ -1,0 +1,10 @@
+echo git add .
+git add .
+echo git commit -m "Add user microposts"
+git commit -m "Add user microposts"
+echo git checkout master
+git checkout master
+echo git merge user-microposts
+git merge user-microposts
+echo git push
+git push
