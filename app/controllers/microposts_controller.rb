@@ -24,7 +24,6 @@ class MicropostsController < ApplicationController
   private
 
   def correct_user
-    binding.pry
     @micropost = current_user.microposts.find_by_id(params[:id])
     redirect_to root_url if @micropost.nil?
   end
