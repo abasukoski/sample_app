@@ -60,8 +60,6 @@ describe "AuthenticationPages" do
 
       describe "when attempting to visit a protected page" do
         before do
-          puts "user is #{user.ai}"
-          puts "user_path is #{edit_user_path(user)}"
           visit edit_user_path(user)
           sign_in user
         end
